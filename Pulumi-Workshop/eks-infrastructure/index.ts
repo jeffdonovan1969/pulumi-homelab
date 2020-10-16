@@ -4,7 +4,6 @@ import * as pulumi from "@pulumi/pulumi";
 
 
 const vpc = new awsx.ec2.Vpc("workshop-vpc", {});
-
 const cluster = new eks.Cluster("eks", 
 {
     vpcId: vpc.id,
