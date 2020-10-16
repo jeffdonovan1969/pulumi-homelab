@@ -26,7 +26,7 @@ myview = azure_nextgen.costmanagement.v20191101.View("view",
         }],
     },
 
-    display_name = "TeamCE Cost",
+    display_name = "Azure TeamCE Cost",
     metric = "ActualCost",
     kpis = [
         {
@@ -49,12 +49,16 @@ myview = azure_nextgen.costmanagement.v20191101.View("view",
             "type": "Dimension",
         },
         {
-            "name": "ResourceGroup",
+            "name": "Service name",
             "type": "Dimension",
         },
+        #{
+        #    "name": "Resource group name",
+        #    "type": "Dimension",
+        #},
     ],
     timeframe = "MonthToDate",
-    type = "UsageAndForecast",
-    view_name = "teamceExample")
+    type = "Usage",
+    view_name = "teamsExample1")
 
 pulumi.export("Cost Report Name", myview.name)
