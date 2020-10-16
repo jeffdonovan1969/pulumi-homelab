@@ -1,0 +1,2 @@
+config:
+  eks-demo-apps:clusterStackRef: shaht/eks-infrastructure/dev

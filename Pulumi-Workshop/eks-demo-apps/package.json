@@ -1,0 +1,10 @@
+{
+    "name": "eks-demo-apps",
+    "devDependencies": {
+        "@types/node": "^10.0.0"
+    },
+    "dependencies": {
+        "@pulumi/kubernetes": "^2.6.3",
+        "@pulumi/pulumi": "^2.0.0"
+    }
+}
